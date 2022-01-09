@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/mint/static/css/main.8c854ece.chunk.css",
-    "main.js": "/mint/static/js/main.99bd14af.chunk.js",
-    "main.js.map": "/mint/static/js/main.99bd14af.chunk.js.map",
-    "runtime-main.js": "/mint/static/js/runtime-main.5d52c622.js",
-    "runtime-main.js.map": "/mint/static/js/runtime-main.5d52c622.js.map",
-    "static/js/2.ca7f06b3.chunk.js": "/mint/static/js/2.ca7f06b3.chunk.js",
-    "static/js/2.ca7f06b3.chunk.js.map": "/mint/static/js/2.ca7f06b3.chunk.js.map",
-    "static/js/3.a64233a7.chunk.js": "/mint/static/js/3.a64233a7.chunk.js",
-    "static/js/3.a64233a7.chunk.js.map": "/mint/static/js/3.a64233a7.chunk.js.map",
-    "index.html": "/mint/index.html",
-    "static/css/main.8c854ece.chunk.css.map": "/mint/static/css/main.8c854ece.chunk.css.map",
-    "static/js/2.ca7f06b3.chunk.js.LICENSE.txt": "/mint/static/js/2.ca7f06b3.chunk.js.LICENSE.txt",
-    "static/media/1.7aa3f23c.png": "/mint/static/media/1.7aa3f23c.png",
-    "static/media/reset.css": "/mint/static/media/PressStart2P-Regular.f2341734.woff"
+    "main.css": "/minting/static/css/main.b795fe85.chunk.css",
+    "main.js": "/minting/static/js/main.99bd14af.chunk.js",
+    "main.js.map": "/minting/static/js/main.99bd14af.chunk.js.map",
+    "runtime-main.js": "/minting/static/js/runtime-main.3e7026b1.js",
+    "runtime-main.js.map": "/minting/static/js/runtime-main.3e7026b1.js.map",
+    "static/js/2.ca607dcd.chunk.js": "/minting/static/js/2.ca607dcd.chunk.js",
+    "static/js/2.ca607dcd.chunk.js.map": "/minting/static/js/2.ca607dcd.chunk.js.map",
+    "static/js/3.a64233a7.chunk.js": "/minting/static/js/3.a64233a7.chunk.js",
+    "static/js/3.a64233a7.chunk.js.map": "/minting/static/js/3.a64233a7.chunk.js.map",
+    "index.html": "/minting/index.html",
+    "static/css/main.b795fe85.chunk.css.map": "/minting/static/css/main.b795fe85.chunk.css.map",
+    "static/js/2.ca607dcd.chunk.js.LICENSE.txt": "/minting/static/js/2.ca607dcd.chunk.js.LICENSE.txt",
+    "static/media/1.7aa3f23c.png": "/minting/static/media/1.7aa3f23c.png",
+    "static/media/reset.css": "/minting/static/media/PressStart2P-Regular.f2341734.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.5d52c622.js",
-    "static/js/2.ca7f06b3.chunk.js",
-    "static/css/main.8c854ece.chunk.css",
+    "static/js/runtime-main.3e7026b1.js",
+    "static/js/2.ca607dcd.chunk.js",
+    "static/css/main.b795fe85.chunk.css",
     "static/js/main.99bd14af.chunk.js"
   ]
 }
