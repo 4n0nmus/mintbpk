@@ -56,22 +56,22 @@ function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
-  const [feedback, setFeedback] = useState("What Personality will your Bee have?");
+  const [feedback, setFeedback] = useState("These kids are going to college!  Are you ready to join them?");
   const [claimingNft, setClaimingNft] = useState(false);
 
   const claimNFTs = (_amount) => {
     if (_amount <= 0) {
       return;
     }
-    setFeedback("Preparing your Twee the Bee NFT...");
+    setFeedback("Preparing your BPK NFT...");
     setClaimingNft(true);
     blockchain.smartContract.methods
       .mint(blockchain.account, _amount)
       .send({
         gasLimit: "285000",
-        to: "0x688db0131c807a3495c23bc1b25726a76ea31f49",
+        to: "0xe5302721895bb2a4cba31f95b66aace9fe8f646c",
         from: blockchain.account,
-        value: blockchain.web3.utils.toWei((.02 * _amount).toString(), "ether"),
+        value: blockchain.web3.utils.toWei((15 * _amount).toString(), "ether"),
       })
       .once("error", (err) => {
         console.log(err);
@@ -80,7 +80,7 @@ function App() {
       })
       .then((receipt) => {
         setFeedback(
-          "Woohoo! You just helped save the Bees! Visit Opensea.io to view your randomly generated NFT!"
+          "Woohoo! You just took a step toward college! Visit Opensea.io to view your randomly generated NFT!"
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -103,7 +103,7 @@ function App() {
         <s.TextTitle
           style={{ textAlign: "center", fontSize: 36, fontWeight: "bold" }}
         >
-          The Bee Collaborative NFT Minting Hive
+          The Backpack Kids School of Mint
           
         </s.TextTitle>
         <s.SpacerMedium />
@@ -131,10 +131,10 @@ function App() {
                 </s.TextTitle>
                 <s.SpacerSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
-                  You can still buy and trade TBC NFTs on{" "}
+                  You can still buy and trade BPK NFTs on{" "}
                   <a
                     target={""}
-                    href={"https://opensea.io/collection/the-bee-collaborative"}
+                    href={"https://opensea.io/collection/backpackkids"}
                   >
                     Opensea.io
                   </a>
@@ -143,11 +143,11 @@ function App() {
             ) : (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
-                  1 Bee NFT costs .02 ETH
+                  1 BPK NFT COSTS 15 MATIC
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
-                  -excluding gas fee-
+                  -1 EXTRA MATIC IN YOUR WALLET WILL COVER GAS FOR MANY MINTS-
                 </s.TextDescription>
                 <s.SpacerLarge />
                 <s.SpacerSmall />
@@ -190,7 +190,7 @@ function App() {
                         getData();
                       }}
                     >
-                      {claimingNft ? "Busy..." : "Buy 1 NFT"}
+                      {claimingNft ? "Busy..." : "Mint 1 BPK"}
                     </StyledButton>
                   </s.Container>
                 )}
@@ -201,11 +201,11 @@ function App() {
         <s.SpacerSmall />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
           <s.TextDescription style={{ textAlign: "center", fontSize: 18 }}>
-            50% of all proceeds go towards Charity and adding Liquidity to TBC Token
+          Additional prizes will be drawn after the sale of each 1,000 BPK.<p/>We hope to continue doing this with more collections in the future!<p/><p/>*.*.*Next BPK Collection launching after this collection sells out.*.*.* 
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription style={{ textAlign: "center", fontSize: 14 }}>
-            Bee Rewarded to help Save the Bees #TBCToken<p/>*.*.*Launching_Soon*.*.*
+          Grand prize drawn upon sell out of all 10,000 BPK.<p/>(Gifted ONLY to a university and subject to fluctuate based on health of crypto market.)
           </s.TextDescription>
         </s.Container>
       </s.Container>

@@ -257,9 +257,9 @@ abstract contract Context {
 
 /**
  
- *The Bee Collaborative by TBC Token (TBC)
+ *Backpack Kids
  *
- * 10,000 Bees flying through decentraland.
+ * 10,000 BPK headed to college.
 */
 
 

@@ -1226,7 +1226,7 @@ contract TheBeeCollaborative is ERC721Enumerable, Ownable { // contract name to 
 
   string public baseURI;
   string public baseExtension = ".json";
-  uint256 public cost = .02 ether; // change price per unit
+  uint256 public cost = 15 ether; // change price per unit
   uint256 public maxSupply = 10000; // max supply, contract will stop minting after this amount is reach in your open sea colection
   uint256 public maxMintAmount = 10; // max allowed to mint at one time N.O.T.E must be => than line 1241 - mint(msg.sender, 10);
   bool public paused = false;
